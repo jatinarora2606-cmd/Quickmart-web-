@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Quick Mart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Login to Quick Mart</h1>
+    </div>
+
+    <form id="loginForm">
+      <label>Email or Username</label>
+      <input type="text" name="username" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required>
+
+      <a href="#">I forgot my password</a>
+      <input type="submit" value="Log In">
+    </form>
+
+    <div class="footer">
+      <h3>Login with another account</h3>
+      <div class="images">
+        <img src="images/1.png" alt="Google">
+        <img src="images/2.png" alt="Facebook">
+        <img src="images/3.png" alt="Twitter">
+        <img src="images/4.png" alt="LinkedIn">
+        <img src="images/5.jpg" alt="GitHub">
+      </div>
+      <a href="signup.html">Not a member yet? <strong>Sign up free</strong></a>
+    </div>
+  </div>
+
+  <script>
+    // Fake login handler for now
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); 
+      // Redirect to homepage (home.html) after login
+      window.location.href = "home.html"; 
+    });
+  </script>
+</body>
+</html>
